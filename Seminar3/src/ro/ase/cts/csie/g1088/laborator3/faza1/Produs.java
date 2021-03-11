@@ -1,4 +1,4 @@
-package ro.ase.cts.csie.g1088.laborator3;
+package ro.ase.cts.csie.g1088.laborator3.faza1;
 
 public class Produs {
 	

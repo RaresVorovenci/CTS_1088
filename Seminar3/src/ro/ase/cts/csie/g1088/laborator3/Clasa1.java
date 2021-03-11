@@ -1,6 +1,6 @@
-package ro.ase.cts.csie.g1088.laborator3.faza1;
+package ro.ase.cts.csie.g1088.laborator3;
 
-public class Produs {
+public class Clasa1 {
 	public float Calculeaza(int t, float s, int perioada)
 	  {
 	    float rezultat = 0;
