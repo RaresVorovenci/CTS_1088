@@ -5,6 +5,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry excluding="ro/ase/cts/csie/g1088/laborator3/faza1/Clasa1.java" kind="src" path="src"/>
+	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
