@@ -11,7 +11,7 @@ public class TestDecorator {
         
 		SuperErou dragon2 = new Dragon("Dragonul galben",1000);
 		dragon.alearga();
-		dragon.esteLovit(800);
+		dragon.esteLovit(200);
 		dragon.seVindeca(100);
 		
 		//aplicam decoratori pe primul obiect
