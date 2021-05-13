@@ -3,11 +3,12 @@ package ro.ase.csie.cts.g1088.dp.prototype;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Caracter3D implements Cloneable{
+public class Caracter3D implements Cloneable {
 	String fisierModel3D;
-    String culoare;
-    int inaltime;
-    ArrayList<Integer> puncteGrafic = null;
+	String culoare;
+	int inaltime;
+	ArrayList<Integer> puncteGrafic = null;
+
 	public Caracter3D(String fisierModel3D) {
 		System.out.println("Se incarca modelul 3D din " + fisierModel3D);
 		try {
@@ -16,36 +17,34 @@ public class Caracter3D implements Cloneable{
 			e.printStackTrace();
 		}
 		this.fisierModel3D = fisierModel3D;
-		
+
 		Random random = new Random();
 		puncteGrafic = new ArrayList<>();
-	    for(int i=0;i<10;i++) {
-	    	puncteGrafic.add(random.nextInt(1000));
-	    }
-	    
-	    
+		for (int i = 0; i < 10; i++) {
+			puncteGrafic.add(random.nextInt(1000));
+		}
+
 	}
-	
-	
+
 	private Caracter3D() {
-		
+
 	}
-	
+
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("Puncte caracter 3D: ");
-		for(int punct : this.puncteGrafic) {
-			sb.append(punct+" | ");
+		for (int punct : this.puncteGrafic) {
+			sb.append(punct + " | ");
 		}
 		return sb.toString();
 	}
-	
+
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
-		//Nu prin acelasi constructor - asta era problema initiala
-		//Caracter3D copie = new Caracter3D(this.fisierModel3D);
-		
+		// Nu prin acelasi constructor - asta era problema initiala
+		// Caracter3D copie = new Caracter3D(this.fisierModel3D);
+
 		Caracter3D copie = new Caracter3D();
 		copie.culoare = this.culoare;
 		copie.fisierModel3D = this.fisierModel3D;
@@ -53,6 +52,5 @@ public class Caracter3D implements Cloneable{
 		copie.puncteGrafic = (ArrayList<Integer>) this.puncteGrafic.clone();
 		return copie;
 	}
-    
-    
+
 }
