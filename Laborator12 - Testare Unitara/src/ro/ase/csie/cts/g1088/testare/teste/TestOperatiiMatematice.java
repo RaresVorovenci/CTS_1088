@@ -39,7 +39,7 @@ public class TestOperatiiMatematice {
 		int b=6;
 		int sumaAsteptata = 12;
 		int sumaCalculata = OperatiiMatematice.suma(a, b);
-		assertEquals("Test cu 5 si 6", sumaCalculata, sumaCalculata);
+		assertEquals("Test cu 5 si 6", sumaAsteptata, sumaCalculata);
 		
 	}
 
