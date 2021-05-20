@@ -4,7 +4,7 @@ public class DecoratorArmura extends DecoratorErouAbstract{
 
 	int nivelArmura;
 	
-	public DecoratorArmura(SuperErou erou, int i) {
+	public DecoratorArmura(SuperErou erou, int nivelArmura) {
 		super(erou);
 		this.nivelArmura = nivelArmura;
 	}

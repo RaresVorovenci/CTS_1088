@@ -12,7 +12,7 @@ public class TestSingleton {
 
 		if(conexiune1 == conexiune2)
 		{
-			System.out.println("Cele 2 referinte sunt identice");
+			System.out.println("Cele 2  software sunt identice");
 		}
 		else {
 			System.out.println("Cele 2 referinte sunt diferite");

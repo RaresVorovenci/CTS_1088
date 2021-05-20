@@ -22,6 +22,8 @@ public class TestDecorator {
 		dragon.esteLovit(400);
 		
 		dragon = new DecoratorEsteRanit(dragon);
+		
+		dragon.getPuncteViata();
 		dragon.esteLovit(400);
 		dragon.alearga();
 	}

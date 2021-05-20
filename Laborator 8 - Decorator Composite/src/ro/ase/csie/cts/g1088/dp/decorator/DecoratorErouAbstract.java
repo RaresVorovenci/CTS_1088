@@ -28,7 +28,8 @@ public abstract class DecoratorErouAbstract extends SuperErou {
 	}
 	@Override
 	public int getPuncteViata()
-	{
+	{  
+		System.out.println(String.format("Puncte viata %d", this.erou.puncteViata));
 		return this.erou.puncteViata;
 		
 	}
