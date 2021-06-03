@@ -15,6 +15,7 @@ public class TestFactory {
 		ArrayList<CaracterAbstract> caractere =
 				new ArrayList<>();
 		
+		System.out.println(mickeyMouse.toString());
 	}
 
 }
