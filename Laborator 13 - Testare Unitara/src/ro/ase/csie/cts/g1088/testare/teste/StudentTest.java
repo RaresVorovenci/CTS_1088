@@ -1,12 +1,15 @@
 package ro.ase.csie.cts.g1088.testare.teste;
 
 import org.junit.*;
+import org.junit.experimental.categories.Category;
 import org.junit.experimental.theories.suppliers.TestedOn;
 
 import ro.ase.csie.cts.g1088.testare.exceptii.ExceptieNota;
 import ro.ase.csie.cts.g1088.testare.exceptii.ExceptieNume;
 import ro.ase.csie.cts.g1088.testare.exceptii.ExceptieVarsta;
 import ro.ase.csie.cts.g1088.testare.modele.Student;
+import ro.ase.csie.cts.g1088.testare.teste.categorii.TestImportant;
+import ro.ase.csie.cts.g1088.testare.teste.categorii.TestPerformanta;
 
 import java.util.ArrayList;
 
@@ -88,6 +91,7 @@ public class StudentTest {
         student.setNume(numeNou);
     }
     
+    @Category({TestPerformanta.class, TestImportant.class})
     @Test
     public void testGetNotaMinimaOrderingSetSortatCrescator() throws ExceptieNota {
     	int notaMinima = 4;
@@ -101,6 +105,7 @@ public class StudentTest {
         assertEquals("Test cu valori sortate crescator", notaMinima, notaMinimaCalculata);
     }
     
+    @Category({TestImportant.class})
     @Test
     public void testGetNotaMinimaCardinalityZero() throws ExceptieNota {
     	ArrayList<Integer> note = new ArrayList<>();
